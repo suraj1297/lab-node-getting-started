@@ -4,8 +4,11 @@ class SortedList {
     this.length = 0
   }
   add(item) {
+    // this will add new item in items array     
     this.items.push(item)
+    // this will sort the items array in ascending order
     this.items.sort((a, b) => a - b)
+    // this will update the length of array
     this.length = this.items.length
 
   }
