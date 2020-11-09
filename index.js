@@ -13,7 +13,8 @@ class SortedList {
 
   }
   get(pos) {
-
+    
+    // it will return the element at index pos from items array and if index if greater the lenght of array it will throw error
     if (pos < this.items.length)
       return this.items[parseInt(pos)]
     else {
@@ -22,7 +23,8 @@ class SortedList {
 
   }
   max() {
-
+  
+    // this will return the max element as items array is sorted it will be at the end of items array
     if (this.items.length > 0)
       return this.items[this.items.length - 1]
     else
@@ -30,6 +32,7 @@ class SortedList {
 
   }
   min() {
+     // this will return the min element as items array is sorted it will be at the beginning of items array
     if (this.items.length > 0)
       return this.items[0]
     else
@@ -37,7 +40,8 @@ class SortedList {
 
   }
   avg() {
-
+     
+    // it will calculate the average of all the numbers in items
     if (this.items.length > 0)
       return this.sum() / this.items.length
     else
@@ -46,7 +50,7 @@ class SortedList {
   }
 
   sum() {
-
+    // it will calculate the sum of all the numbers in array
     if (this.items.length > 0)
       return this.items.reduce((acc, item) => acc = acc + item, 0)
     else
